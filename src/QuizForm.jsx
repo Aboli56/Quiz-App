@@ -33,6 +33,11 @@ const startClick=()=>{
 
   return (
     <div className='app'>
+      {start ? (
+               <div className='startBtn'>
+               <button onClick={startClick}>Start Quiz</button>
+             </div>
+          ):(
       <div className='main'>
       {viewScore ? (
         
@@ -41,13 +46,6 @@ const startClick=()=>{
         <button type='submit' className='reset' onClick={resetQuiz}>RESET QUIZ</button>
         </div>
       ) :(
-        <>
-          {start ? (
-               <div className='startBtn'>
-                <img src='./start.JPEG' alt="img"/>
-               <button onClick={startClick}>Start Quiz</button>
-             </div>
-          ):(
             <div className='que-container'>
             <div>
             <div className='que-no'>
@@ -65,10 +63,9 @@ const startClick=()=>{
                   ))}
                 </div>
               </div>
-          )}
-        </>
       )}
     </div>
+     )}
   </div>
   )
 }
