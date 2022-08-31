@@ -43,7 +43,7 @@ const startClick=()=>{
         
         <div className='score'>
         <p>You have scored <span>{score} </span>out of <span>{Data.length}</span> </p><br/>
-        <button type='submit' className='reset' onClick={resetQuiz}>RESET QUIZ</button>
+        <button type='submit' className='reset' onClick={resetQuiz}>RESTART QUIZ</button>
         </div>
       ) :(
             <div className='que-container'>
