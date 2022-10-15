@@ -43,7 +43,8 @@
     
 }
 .list-ans button p{
-    margin-left: 10px;
+/*     margin-left: 10px; */
+    padding:10px ;
 }
 .list-ans button:hover{
     background-color: #efefef;
